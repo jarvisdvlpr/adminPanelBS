@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+    <link rel="stylesheet" href="./assets/style/adminPanel.css" />
+    <script
+      src="https://kit.fontawesome.com/e164bdcb7c.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="admin">
+      <div class="wrapper">
+        <div class="sidebar">
+          <div class="logo">
+            <img src="./assets/image/logo.svg" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />Home</li>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />Books</li>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />About</li>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />Join Us</li>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />Contact</li>
+              <li><img src="./assets/image/iconlogo.svg" alt="" />Logout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin_panel">
+        <div class="admin_icon">
+          <i class="fa-regular fa-user"></i>
+          <span>Admin</span>
+        </div>
+
+        <nav class="mobile_menu" id="open">
+          <div class="mobile_header">
+            <img src="./assets/image/mobilmenulogo.svg" alt="" />
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+          <ul>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />Home</li>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />Books</li>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />About</li>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />Join Us</li>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />Contact</li>
+            <li><img src="./assets/image/iconlogo.svg" alt="" />Logout</li>
+          </ul>
+        </nav>
+
+        <div class="hamburger">
+          <img src="./assets/image/mobillogo.svg" alt="" />
+          <a href="#open"><i class="fa-solid fa-bars"></i></a>
+        </div>
+
+        <div class="search_section">
+          <h2>Add book</h2>
+          <h3>Search book</h3>
+          <div class="search">
+            <input type="text" placeholder="Dan Brown" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="book_info">
+          <div class="head">
+            <h4>Book form</h4>
+          </div>
+          <form action="#">
+            <label for="Bname">Book Name</label>
+            <input type="text" />
+            <label for="Aname">Author Name</label>
+            <input type="text" />
+            <label for="url">Book Image Url</label>
+            <input type="url" />
+            <label for="dscrptn">Description</label>
+            <textarea name=""></textarea>
+            <label for="type">Book Type</label>
+            <input type="text" />
+            <button>Add</button>
+          </form>
+        </div>
+        <div class="book_store">
+          <div class="head">
+            <h4>About Store</h4>
+          </div>
+          <form action="#">
+            <label for="title">Title</label>
+            <input type="text" />
+            <label for="url">Book Image Url</label>
+            <input type="url" />
+            <label for="dscrptn">Description</label>
+            <textarea name=""></textarea>
+            <button>About info add</button>
+          </form>
+        </div>
+
+        <div class="title">
+          <h2>Join Us</h2>
+        </div>
+        <div class="table">
+          <div class="head">
+            <span>#</span>
+            <span>Full Name</span>
+            <span>Email Address</span>
+          </div>
+          <div class="info">
+            <span>1</span>
+            <span>Audrey Mckinney</span>
+            <span>watson@example.com</span>
+          </div>
+          <div class="info">
+            <span>2</span>
+            <span>Savannah Howard</span>
+            <span>brown@example.com</span>
+          </div>
+        </div>
+
+        <div class="title">
+          <h2>Books</h2>
+        </div>
+        <div class="table2">
+          <div class="head">
+            <span>#</span>
+            <span>Title</span>
+            <span>Description</span>
+            <span>Category</span>
+            <span>Author</span>
+          </div>
+          <div class="info">
+            <span>1</span>
+            <span>Angelsy</span>
+            <span>Lorem ipsum</span>
+            <span>Dedectiv</span>
+            <span>Dan Brown</span>
+          </div>
+          <div class="info">
+            <span>2</span>
+            <span>Angelsy</span>
+            <span>Lorem ipsum</span>
+            <span>Dedectiv</span>
+            <span>Dan Brown</span>
+          </div>
+        </div>
+        <div class="title">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="table2">
+          <div class="head">
+            <span>#</span>
+            <span>Full Name</span>
+            <span>Address</span>
+            <span>Email Address</span>
+            <span>Phone Number</span>
+          </div>
+          <div class="info">
+            <span>1</span>
+            <span>Audrey Mckinney</span>
+            <span>1473 Ranchview</span>
+            <span>watson@example.com</span>
+            <span>555-0104</span>
+          </div>
+          <div class="info">
+            <span>2</span>
+            <span>Savannah Howard</span>
+            <span>8445 Railroad</span>
+            <span>brown@example.com</span>
+            <span>555-0124</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
