@@ -20,7 +20,8 @@ body {
             margin-top: 90px;
             form {
                 width: 50%;
-                height: 280px;
+                //height: 280px;
+                height: fit-content;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -29,6 +30,7 @@ body {
                 background-color: #fff;
                 margin: 0 auto;
                 border-radius: 2px;
+                padding: 20px 0;
                 h1 {
                     font-size: 25px;
                     font-family: sans-serif;
