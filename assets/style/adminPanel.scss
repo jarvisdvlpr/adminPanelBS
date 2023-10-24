@@ -194,8 +194,6 @@
                     display: flex;
                     column-gap: 7px;
 
-                    i {
-                    }
                     p {
                         font-family: sans-serif;
                         &:hover {
@@ -204,6 +202,7 @@
                     }
                 }
             }
+
             h2 {
                 font-family: sans-serif;
                 font-size: 21px;
@@ -259,7 +258,7 @@
                     font-size: 15px;
                     font-weight: 500;
                 }
-                input  {
+                input {
                     margin: 0 auto;
                     width: 90%;
                     padding: 5px 0;
@@ -341,7 +340,6 @@
                     font-size: 15px;
                     font-weight: 600;
                     color: #fff;
-                    cursor: pointer;
                 }
             }
         }
@@ -415,106 +413,99 @@
             margin-left: 30px;
         }
 
-        .table {
-            width: 40%;
-            margin-top: 30px;
-            margin-left: 30px;
-            display: flex;
-            row-gap: 15px;
-            flex-direction: column;
-            background-color: #fff;
+        .table-wrap {
+            width: 30%;
+            overflow-x: auto;
+        }
 
-            .head {
-                display: flex;
-                justify-content: space-between;
-                background-color: #720418;
-                span {
-                    color: #fff;
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    padding: 5px 0;
-
-                    &:nth-child(1) {
-                        margin-left: 5px;
-                    }
-
-                    &:nth-child(2) {
-                        margin-right: 20px;
-                    }
-                    &:nth-child(3) {
-                        margin-right: 50px;
-                    }
-                }
-            }
-            .info {
-                display: flex;
-                justify-content: space-between;
-                background-color: #fff;
-                border-bottom: 1px solid #e6e7e9;
-                span {
-                    color: #000;
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    padding: 5px 0;
-
-                    &:nth-child(1) {
-                        margin-left: 5px;
-                    }
-                }
+        .join-us {
+            h4 {
+                color: #000;
+                font-family: sans-serif;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 196.187%;
+                margin-bottom: 1.625rem;
+                margin-left: 30px;
+                margin-top: 60px;
             }
         }
-        .table2 {
+
+        table,
+        td,
+        th {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        table thead tr {
+            background-color: #720418;
+            color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
             width: 90%;
-            margin-top: 30px;
+            overflow: hidden;
+            margin-bottom: 60px;
             margin-left: 30px;
-            display: flex;
-            row-gap: 15px;
-            flex-direction: column;
-            background-color: #fff;
-            margin-bottom: 50px;
+        }
 
-            .head {
-                display: flex;
-                justify-content: space-between;
-                background-color: #720418;
-                span {
-                    color: #fff;
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    padding: 5px 0;
+        table tbody tr td {
+            border: 1px solid #ddd;
+        }
 
-                    &:nth-child(1) {
-                        margin-left: 5px;
-                    }
-                    &:nth-child(2) {
-                        margin-right: 20px;
-                    }
-                    &:nth-child(3) {
-                        margin-right: 10px;
-                    }
-                    &:nth-child(4) {
-                        margin-right: 0px;
-                    }
-                    &:nth-child(5) {
-                        margin-right: 20px;
-                    }
-                }
+        th,
+        td {
+            padding: 15px;
+            white-space: nowrap;
+        }
+
+        table tbody tr:nth-child(odd) {
+            background: #b4b4b442;
+            color: #000;
+            /* font-weight: 300; */
+        }
+
+        .box-wrap {
+            padding: 0px 16px;
+        }
+
+        table tbody tr td::last-child {
+            background-color: red;
+        }
+
+        .table-responsive {
+            width: 60%;
+        }
+
+        // ? Book
+        .book {
+            h4 {
+                color: #000;
+                font-family: sans-serif;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 196.187%;
+                margin-bottom: 1.625rem;
+                margin-left: 30px;
             }
-            .info {
-                display: flex;
-                justify-content: space-between;
-                background-color: #fff;
-                border-bottom: 1px solid #e6e7e9;
-                span {
-                    color: #000;
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    padding: 5px 0;
+        }
 
-                    &:nth-child(1) {
-                        margin-left: 5px;
-                    }
-                }
+        // ? Contact Us
+
+        .contact-us {
+            h4 {
+                color: #000;
+                font-family: sans-serif;
+                font-size: 1.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 196.187%;
+                margin-bottom: 1.625rem;
+                margin-left: 30px;
             }
         }
     }
@@ -552,34 +543,16 @@
                     }
                 }
             }
-            .table {
-                width: 80%;
-
-                .head {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-            }
-            .table2 {
-                width: 88%;
-
-                .head {
-                    span {
-                        font-size: 7px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 7px;
-                    }
-                }
-            }
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: scroll;
+        }
+        .table-books {
+            overflow-x: scroll;
+        }
+        .contact-us-resp {
+            overflow-x: scroll;
         }
     }
 }
@@ -615,35 +588,16 @@
                     }
                 }
             }
-
-            .table {
-                width: 70%;
-
-                .head {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-            }
-            .table2 {
-                width: 90%;
-
-                .head {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 10px;
-                    }
-                }
-            }
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: scroll;
+        }
+        .table-books {
+            overflow-x: scroll;
+        }
+        .contact-us-resp {
+            overflow-x: scroll;
         }
     }
 }
@@ -679,34 +633,16 @@
                     }
                 }
             }
-            .table {
-                width: 60%;
-
-                .head {
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 12px;
-                    }
-                }
-            }
-            .table2 {
-                width: 90%;
-
-                .head {
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                .info {
-                    span {
-                        font-size: 12px;
-                    }
-                }
-            }
+        }
+        .table-responsive {
+            width: 100%;
+            overflow-x: scroll;
+        }
+        .table-books {
+            overflow-x: scroll;
+        }
+        .contact-us-resp {
+            overflow-x: scroll;
         }
     }
 }
@@ -714,6 +650,7 @@
     .admin {
         .admin_panel {
             width: 100%;
+            overflow-x: scroll;
 
             .search_section {
                 width: 80%;
@@ -726,49 +663,20 @@
                     }
                 }
             }
-            .table {
-                width: 40%;
-
-                .head {
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                .info {
-                    span {
-                        color: #000;
-                        font-family: sans-serif;
-                        font-size: 12px;
-                        padding: 5px 0;
-                    }
-                }
-            }
-            .table2 {
-                width: 90%;
-
-                .head {
-                    span {
-                        color: #fff;
-                        font-family: sans-serif;
-                        font-size: 12px;
-                        padding: 5px 0;
-                    }
-                }
-                .info {
-                    display: flex;
-                    justify-content: space-between;
-                    background-color: #fff;
-                    border-bottom: 1px solid #e6e7e9;
-                    span {
-                        color: #000;
-                        font-family: sans-serif;
-                        font-size: 12px;
-                        padding: 5px 0;
-                    }
-                }
-            }
         }
     }
 }
 @media (min-width: 993px) and (max-width: 1125px) {
+    .admin {
+        .admin_panel {
+            overflow-x: scroll;
+        }
+    }
+}
+@media (min-width: 1126px) {
+    .admin {
+        .admin_panel {
+            overflow-x: scroll;
+        }
+    }
 }

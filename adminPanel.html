@@ -106,7 +106,7 @@
             <label for="aName">Author Name</label>
             <input type="text"  id="aName" />
             <label for="Burl">Book Image Url</label>
-            <input type="url"  id="Burl" />
+            <input type="text"  id="Burl" />
             <label for="dscrptn">Description</label>
             <textarea id="dscrptn"></textarea>
             <span><label for="bCategory">Book Category</label> <button type="button" id="showCategory">+</button>
@@ -129,90 +129,94 @@
           <div class="head">
             <h4>About Store</h4>
           </div>
-          <form action="#">
-            <label for="title">Title</label>
-            <input type="text" />
-            <label for="url">Book Image Url</label>
-            <input type="url" />
-            <label for="dscrptn">Description</label>
-            <textarea name=""></textarea>
+          <form id="aboutUsForm">
+            <label for="titleAbout">Title</label>
+            <input type="text" id="titleAbout" />
+            <label for="imgUrlAbout">Book Image Url</label>
+            <input type="text"  id="imgUrlAbout"/>
+            <label for="descAboutUs">Description</label>
+            <textarea id="descAboutUs"></textarea>
             <button>About info add</button>
           </form>
         </div>
 
-        <div class="title">
-          <h2>Join Us</h2>
+        <div class="join-us" id="join-us-nav-link">
+          <h4>Join Us</h4>
         </div>
-        <div class="table">
-          <div class="head">
-            <span>#</span>
-            <span>Full Name</span>
-            <span>Email Address</span>
-          </div>
-          <div class="info">
-            <span>1</span>
-            <span>Audrey Mckinney</span>
-            <span>watson@example.com</span>
-          </div>
-          <div class="info">
-            <span>2</span>
-            <span>Savannah Howard</span>
-            <span>brown@example.com</span>
-          </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead">
+            <tr>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="join-tbody">
+            </tbody>
+          </table>
+        </div>
+        <!-- ? Books -->
+        <div class="book" id="book-table-nav-link">
+          <h4>Books</h4>
         </div>
 
-        <div class="title">
-          <h2>Books</h2>
+        <div class="table-books">
+          <table class="books">
+            <thead class="books-thead">
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Author</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="books-tbody">
+
+            </tbody>
+          </table>
         </div>
-        <div class="table2" id="booksTable">
-          <div class="head">
-            <span>#</span>
-            <span>Title</span>
-            <span>Description</span>
-            <span>Category</span>
-            <span>Author</span>
-          </div>
-<!--          <div class="info">-->
-<!--            <span>1</span>-->
-<!--            <span>Angelsy</span>-->
-<!--            <span>Lorem ipsum</span>-->
-<!--            <span>Dedectiv</span>-->
-<!--            <span>Dan Brown</span>-->
-<!--          </div>-->
-<!--          <div class="info">-->
-<!--            <span>2</span>-->
-<!--            <span>Angelsy</span>-->
-<!--            <span>Lorem ipsum</span>-->
-<!--            <span>Dedectiv</span>-->
-<!--            <span>Dan Brown</span>-->
-<!--          </div>-->
+        <!-- ? Contact Us -->
+        <div class="contact-us" id="contact-us-nav-link">
+          <h4>Contact Us</h4>
         </div>
-        <div class="title">
-          <h2>Contact Us</h2>
+
+        <div class="contact-us-resp">
+          <table class="contact">
+            <thead class="contact-thead">
+            <tr>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Address</th>
+              <th>Email Address</th>
+              <th>Phone Number</th>
+              <th>Note</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="contact-tbody">
+            <tr>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+            </tr>
+            <tr>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+              <td>sssss</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="table2">
-          <div class="head">
-            <span>#</span>
-            <span>Full Name</span>
-            <span>Address</span>
-            <span>Email Address</span>
-            <span>Phone Number</span>
-          </div>
-          <div class="info">
-            <span>1</span>
-            <span>Audrey Mckinney</span>
-            <span>1473 Ranchview</span>
-            <span>watson@example.com</span>
-            <span>555-0104</span>
-          </div>
-          <div class="info">
-            <span>2</span>
-            <span>Savannah Howard</span>
-            <span>8445 Railroad</span>
-            <span>brown@example.com</span>
-            <span>555-0124</span>
-          </div>
-        </div>
+
+
       </div>
     </div>
   </body>

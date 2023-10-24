@@ -313,7 +313,6 @@
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  cursor: pointer;
 }
 .admin .admin_panel .book_store {
   width: 80%;
@@ -381,100 +380,79 @@
   margin-top: 100px;
   margin-left: 30px;
 }
-.admin .admin_panel .table {
-  width: 40%;
-  margin-top: 30px;
-  margin-left: 30px;
-  display: flex;
-  row-gap: 15px;
-  flex-direction: column;
-  background-color: #fff;
+.admin .admin_panel .table-wrap {
+  width: 30%;
+  overflow-x: auto;
 }
-.admin .admin_panel .table .head {
-  display: flex;
-  justify-content: space-between;
-  background-color: #720418;
-}
-.admin .admin_panel .table .head span {
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 15px;
-  padding: 5px 0;
-}
-.admin .admin_panel .table .head span:nth-child(1) {
-  margin-left: 5px;
-}
-.admin .admin_panel .table .head span:nth-child(2) {
-  margin-right: 20px;
-}
-.admin .admin_panel .table .head span:nth-child(3) {
-  margin-right: 50px;
-}
-.admin .admin_panel .table .info {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  border-bottom: 1px solid #e6e7e9;
-}
-.admin .admin_panel .table .info span {
+.admin .admin_panel .join-us h4 {
   color: #000;
   font-family: sans-serif;
-  font-size: 15px;
-  padding: 5px 0;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 196.187%;
+  margin-bottom: 1.625rem;
+  margin-left: 30px;
+  margin-top: 60px;
 }
-.admin .admin_panel .table .info span:nth-child(1) {
-  margin-left: 5px;
+.admin .admin_panel table,
+.admin .admin_panel td,
+.admin .admin_panel th {
+  text-align: center;
+  font-size: 16px;
 }
-.admin .admin_panel .table2 {
+.admin .admin_panel table thead tr {
+  background-color: #720418;
+  color: #fff;
+}
+.admin .admin_panel table {
+  border-collapse: collapse;
   width: 90%;
-  margin-top: 30px;
+  overflow: hidden;
+  margin-bottom: 60px;
   margin-left: 30px;
-  display: flex;
-  row-gap: 15px;
-  flex-direction: column;
-  background-color: #fff;
-  margin-bottom: 50px;
 }
-.admin .admin_panel .table2 .head {
-  display: flex;
-  justify-content: space-between;
-  background-color: #720418;
+.admin .admin_panel table tbody tr td {
+  border: 1px solid #ddd;
 }
-.admin .admin_panel .table2 .head span {
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 15px;
-  padding: 5px 0;
+.admin .admin_panel th,
+.admin .admin_panel td {
+  padding: 15px;
+  white-space: nowrap;
 }
-.admin .admin_panel .table2 .head span:nth-child(1) {
-  margin-left: 5px;
+.admin .admin_panel table tbody tr:nth-child(odd) {
+  background: rgba(180, 180, 180, 0.2588235294);
+  color: #000;
+  /* font-weight: 300; */
 }
-.admin .admin_panel .table2 .head span:nth-child(2) {
-  margin-right: 20px;
+.admin .admin_panel .box-wrap {
+  padding: 0px 16px;
 }
-.admin .admin_panel .table2 .head span:nth-child(3) {
-  margin-right: 10px;
+.admin .admin_panel table tbody tr td::last-child {
+  background-color: red;
 }
-.admin .admin_panel .table2 .head span:nth-child(4) {
-  margin-right: 0px;
+.admin .admin_panel .table-responsive {
+  width: 60%;
 }
-.admin .admin_panel .table2 .head span:nth-child(5) {
-  margin-right: 20px;
-}
-.admin .admin_panel .table2 .info {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  border-bottom: 1px solid #e6e7e9;
-}
-.admin .admin_panel .table2 .info span {
+.admin .admin_panel .book h4 {
   color: #000;
   font-family: sans-serif;
-  font-size: 15px;
-  padding: 5px 0;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 196.187%;
+  margin-bottom: 1.625rem;
+  margin-left: 30px;
 }
-.admin .admin_panel .table2 .info span:nth-child(1) {
-  margin-left: 5px;
+.admin .admin_panel .contact-us h4 {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 196.187%;
+  margin-bottom: 1.625rem;
+  margin-left: 30px;
 }
 
 @media only screen and (max-width: 390px) {
@@ -506,23 +484,15 @@
   .admin .admin_panel .search_section .search input {
     width: 80%;
   }
-  .admin .admin_panel .table {
-    width: 80%;
+  .admin .table-responsive {
+    width: 100%;
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .head span {
-    font-size: 10px;
+  .admin .table-books {
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .info span {
-    font-size: 10px;
-  }
-  .admin .admin_panel .table2 {
-    width: 88%;
-  }
-  .admin .admin_panel .table2 .head span {
-    font-size: 7px;
-  }
-  .admin .admin_panel .table2 .info span {
-    font-size: 7px;
+  .admin .contact-us-resp {
+    overflow-x: scroll;
   }
 }
 @media (min-width: 391px) and (max-width: 500px) {
@@ -554,23 +524,15 @@
   .admin .admin_panel .search_section .search input {
     width: 70%;
   }
-  .admin .admin_panel .table {
-    width: 70%;
+  .admin .table-responsive {
+    width: 100%;
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .head span {
-    font-size: 10px;
+  .admin .table-books {
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .info span {
-    font-size: 10px;
-  }
-  .admin .admin_panel .table2 {
-    width: 90%;
-  }
-  .admin .admin_panel .table2 .head span {
-    font-size: 10px;
-  }
-  .admin .admin_panel .table2 .info span {
-    font-size: 10px;
+  .admin .contact-us-resp {
+    overflow-x: scroll;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -602,28 +564,21 @@
   .admin .admin_panel .search_section .search input {
     width: 50%;
   }
-  .admin .admin_panel .table {
-    width: 60%;
+  .admin .table-responsive {
+    width: 100%;
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .head span {
-    font-size: 12px;
+  .admin .table-books {
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .info span {
-    font-size: 12px;
-  }
-  .admin .admin_panel .table2 {
-    width: 90%;
-  }
-  .admin .admin_panel .table2 .head span {
-    font-size: 12px;
-  }
-  .admin .admin_panel .table2 .info span {
-    font-size: 12px;
+  .admin .contact-us-resp {
+    overflow-x: scroll;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .admin .admin_panel {
     width: 100%;
+    overflow-x: scroll;
   }
   .admin .admin_panel .search_section {
     width: 80%;
@@ -635,38 +590,15 @@
   .admin .admin_panel .search_section .search input {
     width: 50%;
   }
-  .admin .admin_panel .table {
-    width: 40%;
+}
+@media (min-width: 993px) and (max-width: 1125px) {
+  .admin .admin_panel {
+    overflow-x: scroll;
   }
-  .admin .admin_panel .table .head span {
-    font-size: 12px;
-  }
-  .admin .admin_panel .table .info span {
-    color: #000;
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 5px 0;
-  }
-  .admin .admin_panel .table2 {
-    width: 90%;
-  }
-  .admin .admin_panel .table2 .head span {
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 5px 0;
-  }
-  .admin .admin_panel .table2 .info {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border-bottom: 1px solid #e6e7e9;
-  }
-  .admin .admin_panel .table2 .info span {
-    color: #000;
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 5px 0;
+}
+@media (min-width: 1126px) {
+  .admin .admin_panel {
+    overflow-x: scroll;
   }
 }
 
