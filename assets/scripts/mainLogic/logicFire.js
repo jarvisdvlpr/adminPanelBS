@@ -63,20 +63,24 @@ function showBooks(myBooks){
               <td>${myBooks[i].category}</td>
               <td>${myBooks[i].author}</td>
               <td>
-              <i class="fa-regular fa-trash-can" id="book-tab-del-${i}" style="cursor: pointer"</i>
+              <i class="fa-regular fa-trash-can" id="book-tab-del-${i}"  style="cursor: pointer"</i>
               </td>
             </tr>`);
    }
 }
 
 function deleteBooks(bookList) {
+
    for (let i in bookList) {
       document.getElementById(`book-tab-del-${i}`).addEventListener("click", ()=>{
-         bookList.splice(i, 1);
-         set(ref(db, '/books'), bookList);
-         document.getElementById(`bookId-${i}`).remove();
+         if(confirm("Are you sure?")){
+            bookList.splice(i, 1);
+            set(ref(db, '/books'), bookList);
+            document.getElementById(`bookId-${i}`).remove();
+         }
       });
    }
+
 }
 
 
@@ -111,10 +115,12 @@ function showContactUs(contactList) {
 function addContactUsDeleteEventListeners(contactList) {
    for (let i in contactList) {
       document.getElementById(`contact-tab-del-${i}`).addEventListener("click", ()=>{
-         contactList.splice(i, 1);
-         set(ref(db, '/contactus'), contactList);
+         if(confirm("Are you sure?")){
+            contactList.splice(i, 1);
+            set(ref(db, '/contactus'), contactList);
 
-         document.getElementById(`contactId-${i}`).remove();
+            document.getElementById(`contactId-${i}`).remove();
+         }
       })
    }
 
@@ -201,13 +207,17 @@ window.addEventListener("load", (event) => {
             </tr>`);
 
             document.getElementById(`join-tab-del-${i}`).addEventListener("click", ()=>{
-               joinArray.splice(i, 1);
-               set(ref(db, '/joinUs'), joinArray);
-               document.getElementById(`joinId-${i}`).remove();
+               if(confirm("Are you sure?")){
+                  joinArray.splice(i, 1);
+                  set(ref(db, '/joinUs'), joinArray);
+                  document.getElementById(`joinId-${i}`).remove();
+               }
             })
          }
       }
    });
+
+
 
 });
 
@@ -283,6 +293,7 @@ document.querySelector("#categoryAdd").addEventListener("click", ()=>{
 
 
 
+
 function showSearchResults(results) {
    // console.log(results['items']['volumeInfo'])
    let searchTag = document.getElementById("searchResult");
@@ -305,6 +316,7 @@ function showSearchResults(results) {
          bookAuthorNameInput.value = results['items'][resultKey]['volumeInfo']['authors'];
          bookImgUrlInput.value = results['items'][resultKey]['volumeInfo']['imageLinks']['thumbnail'];
          bookDescriptionInput.value = results['items'][resultKey]['volumeInfo']['description'];
+         //bookCategoryInput.insertAdjacentHTML('beforeend', `<option value="">test</option>-->`);
       })
    }
 
@@ -338,3 +350,4 @@ document.getElementById("aboutUsForm").addEventListener("submit", (e)=>{
 
    showSuccess("About us has been edited!")
 });
+

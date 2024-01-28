@@ -4,13 +4,22 @@ export class Book {
   imgUrl;
   description;
   category;
+  id;
+  comments;
+  isBestseller;
+  isNew;
 
-  constructor(name, author, imgUrl, desc, category) {
+  constructor(name, author, imgUrl, desc, category, id,comments,
+              isBestseller=false, isNew=false) {
     this.name = name;
     this.author = author;
     this.imgUrl = imgUrl;
     this.description = desc;
     this.category = category;
+    this.id = id;
+    this.comments = comments;
+    this.isBestseller =isBestseller;
+    this.isNew = isNew;
   }
 }
 
